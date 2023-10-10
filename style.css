@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Young Serif", serif;
+}
+
+body {
+  background-color: orange;
+}
+
+@media (max-width: 320px) {
+  body {
+    background-color: greenyellow;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 640px) {
+  body {
+    background-color: purple;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  body {
+    background-color: aqua;
+  }
+}
+@media (max-width: 640px) {
+  .link ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.link ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: wrap;
+}
+
+.link ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.link ul li a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  .responsive-image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .responsive-image img {
+    max-width: 60%;
+  }
+
+  /* İMAGE */
+}
+img {
+  background-image: url("https://picsum.photos/id/1073/600/400");
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 70vw;
+  /* margin: 200px; */
+}
+@media (max-width:1400px) {
+  img{
+  height: auto;
+  width: 70%;
+  background-image: url("https://picsum.photos/id/1058/600/400");
+
+  }
+}
+
+@media (max-width:1200px) {
+  img{
+  min-height:400px ;
+  min-width: 600px;
+
+  }
+}
+
+@media (max-width:800px) {
+  img{
+  min-height:400px ;
+  max-width: 600px;
+  background-image: url("https://picsum.photos/id/976/600/400");
+
+  }
+}
+@media (max-width:600px) {
+  img{
+  min-height:400px ;
+  max-width: 600px;
+  background-image: url("https://picsum.photos/id/402/600/400");
+  }
+}
+.divimg{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+  
